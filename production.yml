@@ -1,0 +1,12 @@
+services:
+  lambda:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        PYTHON_VERSION: $PYTHON_VERSION
+    image: forecast_lambda_renault:${TAG:-latest}
+    env_file:
+      - .env
+    ports:
+      - "9000:8080"
