@@ -13,11 +13,6 @@ A startup template for creating a python lambda function using container image [
    ```bash
    cp .env.example .env
    ```
-   
-2. Configure GitLab access:
-   - Open .env file
-   - Add your GitLab private access token
-   - This token is required to install the CPL forecast library from GitLab packages
 
 ## Local Development
 
