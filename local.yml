@@ -6,7 +6,7 @@ services:
       args:
        PYTHON_VERSION: $PYTHON_VERSION
        INSTALL_WATCHFILES: true
-    image: forecast_lambda_renault:${TAG:-latest}
+    image: python_local_lambda:${TAG:-latest}
     env_file:
       - .env
     volumes:
